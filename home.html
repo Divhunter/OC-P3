@@ -8,22 +8,27 @@
 		<meta name="type" content="text/html">
 		<meta name="description" content="Ohmyfood site web/ mobile, site web/ mobile HTML5">
 		<meta name="author" content="Aaron DIVIOKA">
-		<meta name="title" content="Ohmyfood | Dynamisez une page web avec des animations CSS | site web/ mobile">
+		<meta name="title" content="Ohmyfood | Dynamisez une page web avec des animations CSS 
+        | site web/ mobile">
 		<meta name="url" content="https://ohmyfood.com/">
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Web Fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;
-        0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" 
+        rel="stylesheet">  
 
         <!-- Font Awsone -->
         <script src="https://kit.fontawesome.com/abea2822cd.js" crossorigin="anonymous"></script>
 
 		<!-- Booki core CSS file -->
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
 		<title>Ohmyfood | Dynamisez une page web avec des animations CSS | Home</title>
     
 	</head>
@@ -40,7 +45,7 @@
                     
                     <!-- navigation start -->
 				    <!-- ================ -->
-                    <nav class="navbar">
+                    <nav class="navbar wrap">
 
                         <!-- logo container start -->
                         <!-- ==================== -->
@@ -54,18 +59,18 @@
                         <!-- ======================== -->
                         <div class="location container">
                             <p class="city">Paris, Belleville</p>
-                            <i class="fa-solid fa-location-dot"></i>
+                            <i class="location fa-solid fa-location-dot"></i>
                         </div>
                         <!-- location container end -->
 
                         <!-- menu container start -->
-                        <!-- ======================== -->
+                        <!-- ==================== -->
                         <section class="menu container">
-                            <h1 class="title-menu">Réservez le menu qui vous convient</h1>
-                            <h2 class="subtitle-menu">Découvrez des restaurants d'exception,
+                            <h2 class="title-menu">Réservez le menu qui vous convient</h2>
+                            <h3 class="subtitle-menu">Découvrez des restaurants d'exception,
                                 séléctionnés par nos soins.
-                            </h2>
-                            <a class="btn-menu" href="#">Explorer nos restaurants</a> 
+                            </h3>
+                            <a class="btn-menu btn" href="#restaurants">Explorer nos restaurants</a> 
                         </section>
                         <!-- menu container end -->
 
@@ -84,9 +89,9 @@
                     <section class="functioning container">
 
                         <!-- title -->
-                        <h3 class="functioning-title title">
+                        <h2 class="functioning-title title">
                             Fonctionnement
-                        </h3>
+                        </h2>
 
                         <!-- filters start -->
                         <!-- ============= -->
@@ -111,14 +116,14 @@
 
                     <!-- restaurant container start -->
 			        <!-- ========================== -->
-                    <section class="restaurants container">
+                    <section id="restaurants" class="restaurants container">
 
                         <!-- title -->
-                        <h3 class="restaurant-title title">
+                        <h2 class="restaurant-title title">
                             Restaurants
-                        </h3>
+                        </h2>
 
-                        <a class="la-palette-du-gout restaurant-choice" href="#">
+                        <a class="la-palette-du-gout restaurant-choice" href="la-palette-du-gout.html">
                             <!-- picture -->
                             <div class="choice-wrap">
                                 <img class="img-choice img-la-palette-du-gout" 
@@ -127,14 +132,14 @@
                                     est sobrement travaillée, tendance vert et orange">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-subtitle">La palette du goût</h4> 
+                            <h4 class="restaurant-name">La palette du goût</h4> 
                             <!-- additional info -->
-                            <h5 class="additional-info">Ménilmontant</h5>
+                            <h3 class="additional-info subtitule">Ménilmontant</h3>
                             <!-- like -->
                             <i class="like fa-thin fa-heart"></i>
                         </a>
 
-                        <a class="la-note-enchantee restaurant-choice" href="#">
+                        <a class="la-note-enchantee restaurant-choice" href="la-note-enchantee.html">
                             <!-- picture -->
                             <div class="choice-wrap">
                                 <img class="img-choice img-la-note-enchantee" 
@@ -143,14 +148,14 @@
                                     est sobrement travaillée, tendance marron orangé et beige">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-subtitle">La note enchantée</h4> 
+                            <h4 class="restaurant-name">La note enchantée</h4> 
                             <!-- additional info -->
-                            <h5 class="additional-info">Charonne</h5>
+                            <h3 class="additional-info subtitule">Charonne</h3>
                             <!-- like -->
                             <i class="like fa-thin fa-heart"></i>
                         </a>
 
-                        <a class="a-la-francaise restaurant-choice" href="#">
+                        <a class="a-la-francaise restaurant-choice" href="a-la-francaise.html">
                             <!-- picture -->
                             <div class="choice-wrap">
                                 <img class="img-choice img-a-la-francaise" 
@@ -159,14 +164,14 @@
                                     est sobrement travaillée, tendance blanc et vert">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-subtitle">&Agrave; la française</h4> 
+                            <h4 class="restaurant-name">&Agrave; la française</h4> 
                             <!-- additional info -->
-                            <h5 class="additional-info">Cité rouge</h5>
+                            <h3 class="additional-info subtitle">Cité rouge</h3>
                             <!-- like -->
                             <i class="like fa-thin fa-heart"></i>
                         </a>
 
-                        <a class="le-delice-des-sens restaurant-choice" href="#">
+                        <a class="le-delice-des-sens restaurant-choice" href="le-delice-des-sens">
                             <!-- picture -->
                             <div class="choice-wrap">
                                 <img class="img-choice img-le-delice-des-sens" 
@@ -175,9 +180,9 @@
                                     est sobrement travaillée, tendance orange claire et blanc">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-subtitle">Le délice des sens</h4> 
+                            <h4 class="restaurant-name">Le délice des sens</h4> 
                             <!-- additional info -->
-                            <h5 class="additional-info">Folie-Méricourt</h5>
+                            <h3 class="additional-info subtitle">Folie-Méricourt</h3>
                             <!-- like -->
                             <i class="like fa-thin fa-heart"></i>
                         </a>
@@ -188,41 +193,48 @@
                 </main>
                 <!-- main end -->
 
+                <!-- footer start -->
+                <!-- ============ -->
+                <footer>
+
+                    <!-- footer wrap start -->
+                    <!-- ================= -->
+                    <div class="footer-wrap wrap">
+                    
+                        <!-- logo -->
+                        <h5 class="logo-style">ohmyfood</h5>
+
+                        <!-- footer menu start -->
+                        <!-- ================ -->
+                        <ul class="footer-menu">
+                            
+                            <li class="footer-link">
+                                <a class="link" href="#">Proposer un restaurant</a>
+                                <i class="icon-footer-one fa-solid fa-utensils"></i>
+                            </li>
+                            <li class="footer-link">
+                                <a class="link" href="#">Devenir partenaire</a>
+                                <i class="icon-footer-two fa-solid fa-handshake-angle"></i>
+                            </li>
+                            <li class="footer-link"> 
+                                <a class="link" href="#">Mentions légales</a> 
+                            </li>
+                            <li class="footer-link"> 
+                                <a class="link" href="#">Contact</a> 
+                            </li>
+
+                        </ul>
+                        <!-- footer menu end -->
+
+                    </div>
+                    <!-- footer wrap end -->
+
+                </footer>
+                <!-- footer end -->
+
             </div>
             <!-- fram end -->
 
         </body>
-
-        <!-- footer start -->
-		<!-- ============ -->
-        <footer>
-            
-            <!-- logo -->
-            <h6 class="logo-style">ohmyfood</h6>
-
-            <!-- footer menu start -->
-            <!-- ================ -->
-            <ul class="footer-menu">
-                
-                <li class="footer-link">
-                    <a class="link" href="#">Proposer un restaurant</a>
-                    <i class="icon-footer-one fa-solid fa-utensils"></i>
-                </li>
-                <li class="footer-link">
-                    <a class="link" href="#">Devenir partenaire</a>
-                    <i class="icon-footer-two fa-solid fa-handshake-angle"></i>
-                </li>
-                <li class="footer-link"> 
-                    <a class="link" href="#">Mentions légales</a> 
-                </li>
-                <li class="footer-link"> 
-                    <a class="link" href="#">Contact</a> 
-                </li>
-
-            </ul>
-            <!-- footer menu end -->
-
-        </footer>
-        <!-- footer end -->
 
     </html>
