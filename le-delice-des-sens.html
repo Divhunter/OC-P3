@@ -25,10 +25,15 @@
         <script src="https://kit.fontawesome.com/abea2822cd.js" crossorigin="anonymous"></script>
 
 		<!-- Booki core CSS file -->
-        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/m-queries/desktop-max-1400.css" rel="stylesheet">
+        <link href="css/m-queries/desktop-max-1199.css" rel="stylesheet">
+        <link href="css/m-queries/tablette-max-991.css" rel="stylesheet">
+        <link href="css/m-queries/mobile-max-767.css" rel="stylesheet">
         <link href="css/menu-card.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
 
 		<title>Ohmyfood | Dynamisez une page web avec des animations CSS | Le delice des sens</title>
     
@@ -46,24 +51,24 @@
                     
                     <!-- navigation start -->
 				    <!-- ================ -->
-                    <nav class="navbar wrap">
+                    <nav class="nav nav__food">
 
-                        <!-- logo container start -->
-                        <!-- ==================== -->
-                        <div class="logo-container container">
-                            <img class="logo" src="images/logo/ohmyfood.png" 
+                        <!-- logo box start -->
+                        <!-- ============== -->
+                        <div class="nav__logo__box container">
+                            <img class="nav__logo__box__logo" src="images/logo/ohmyfood.png" 
                             alt="logo de la société Ohmyfood de couleur noir">
 
                             <!-- back home -->
-                            <a class="arrow" href="home.html">
+                            <a class="nav__logo__box__arrow" href="home.html">
                                 &#8592;
                             </a>
                         </div>
-                        <!-- logo container end -->
+                        <!-- logo box end -->
 
                         <!-- picutre -->
-                        <div class="picture container">
-                            <img class="img-choice img-le-delice-des-sens" 
+                        <div class="nav__food__picture container">
+                            <img class="nav__food__picture__img-choice img-le-delice-des-sens" 
                                 src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" 
                                 alt="photo d'une belle assiette appétissante dont la garniture raffinée  
                                     est sobrement travaillée, tendance orange claire et blanc">
@@ -81,52 +86,54 @@
 
                     <!-- meal choice start -->
 			        <!-- ================= -->
-                    <form id="meal-le-delice-des-sens" 
-                        class="meal-choice wrap" 
+                    <form id="form meal-le-delice-des-sens" 
+                        class="form__meal-choice" 
                         name="meal-le-delice-des-sens"  
                         method="post">
 
-                        <!-- title start -->
-			            <!-- =========== -->
-                        <h1 class="meal-title">
+                        <!-- heading -->
+                        <h1 class="form__meal-heading">
                             Le delice des sens
                         </h1>
-                        <i class="meal-like fa-thin fa-heart"></i>
-                        <!-- title end -->
+
+                        <!-- heart icon -->
+                        <img class="form__meal-like"
+                        src="images/icons/heart.png" 
+                        alt="forme géométrique d'un coeur">
 
                         <!-- entree start -->
 			            <!-- ============ -->
-                        <fieldset class="entree container">
+                        <fieldset class="form__field-entree container">
 
                             <!-- additional info -->
-                            <legend class="meal-subtitle subtitle">
+                            <legend class="form__field--subheading subheading">
                                 ENTR&Eacute;ES
                             </legend>
 
                             <!-- entree list start -->
 			                <!-- ================= -->
-                            <ul class="entree-list list">
+                            <ul class="form__field--list entree-list">
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Tartare de thon
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Assaisonné au yuzu
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         25€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="entree-check" 
                                         name="entree-name-le-delice-des-sens" 
                                         id="entree-le-delice-des-sens-one">
@@ -139,24 +146,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Bouchée de homard croustillant
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Et sa farandole de petits légumes
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         35€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="entree-check" 
                                         name="entree-name-le-delice-des-sens" 
                                         id="entree-le-delice-des-sens-two">
@@ -169,24 +176,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Velouté de cêpes
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Aux truffes
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         20€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="entree-check" 
                                         name="entree-name-le-delice-des-sens" 
                                         id="entree-le-delice-des-sens-tree">
@@ -205,37 +212,37 @@
 
                         <!-- main meal start -->
 			            <!-- =============== -->
-                        <fieldset class="main-meal container">
+                        <fieldset class="form__field-main-meal container">
 
                             <!-- additional info -->
-                            <legend class="meal-subtitle subtitle">
+                            <legend class="form__field--subheading subheading">
                                 PLAT
                             </legend>
 
                             <!-- main meal list start -->
 			                <!-- ==================== -->
-                            <ul class="main-meal-list list">
+                            <ul class="form__field--list main-meal-list">
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Poulet rôti aux herbes de provence
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Et sa crème de truffe
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         40€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="main-meal-check" 
                                         name="main-meal-name-le-delice-des-sens" 
                                         id="main-meal-le-delice-des-sens-one">
@@ -248,24 +255,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Langouste rôtie
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Et ses légumes de saison
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         35€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="main-meal-check" 
                                         name="main-meal-name-le-delice-des-sens" 
                                         id="main-meal-le-delice-des-sens-two">
@@ -278,24 +285,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Côte de boeuf angus
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Et sa purée de panais
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         44€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="main-meal-check" 
                                         name="main-meal-name-le-delice-des-sens" 
                                         id="main-meal-le-delice-des-sens-tree">
@@ -314,37 +321,37 @@
 
                         <!-- dessert start -->
 			            <!-- ============= -->
-                        <fieldset class="dessert container">
+                        <fieldset class="form__field-dessert container">
 
                             <!-- additional info -->
-                            <legend class="meal-subtitle subtitle">
+                            <legend class="form__field--subheading subheading">
                                 DESSERTS
                             </legend>
 
                             <!-- dessert list start -->
 			                <!-- ================== -->
-                            <ul class="dessert-list list">
+                            <ul class="form__field--list dessert-list">
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Farandole de desserts
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Du chef
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         18€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="dessert-check" 
                                         name="dessert-name-le-delice-des-sens" 
                                         id="dessert-le-delice-des-sens-one">
@@ -357,24 +364,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Crème brulée
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Revisitée
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         22€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="dessert-check" 
                                         name="dessert-name-le-delice-des-sens" 
                                         id="dessert-le-delice-des-sens-two">
@@ -387,24 +394,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Tiramisu
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         &Agrave; la noisette
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         23€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="dessert-check" 
                                         name="dessert-name-le-delice-des-sens" 
                                         id="dessert-le-delice-des-sens-tree">
@@ -422,7 +429,7 @@
                         <!-- dessert end -->
 
                         <input id="btn-meal-le-delice-des-sens" 
-                        class="btn-meal-le-delice-des-sens btn" 
+                        class="form__field--btn"
                         type="submit" value="Commander">
                         
                     </form>
@@ -437,36 +444,36 @@
 
                     <!-- footer wrap start -->
                     <!-- ================= -->
-                    <div class="footer-wrap wrap">
+                    <div class="footer__wrap">
                     
                         <!-- logo -->
-                        <span class="logo-font-style">
+                        <span class="footer__wrap__logo-font-style">
                             ohmyfood
                         </span>
 
                         <!-- footer menu start -->
-                        <!-- ================ -->
-                        <ul class="footer-menu">
+                        <!-- ================= -->
+                        <ul class="footer__wrap__menu">
                             
-                            <li class="footer-link">
-                                <a class="link" href="#">
+                            <li>
+                                <a href="#">
                                     Proposer un restaurant
                                 </a>
-                                <i class="icon-footer-one fa-solid fa-utensils"></i>
+                                <i class="footer__wrap__menu__icon-utensils fa-solid fa-utensils"></i>
                             </li>
-                            <li class="footer-link">
-                                <a class="link" href="#">
+                            <li>
+                                <a href="#">
                                     Devenir partenaire
                                 </a>
-                                <i class="icon-footer-two fa-solid fa-handshake-angle"></i>
+                                <i class="footer__wrap__menu__icon-hands fa-solid fa-handshake-angle"></i>
                             </li>
-                            <li class="footer-link"> 
-                                <a class="link" href="#">
+                            <li> 
+                                <a href="#">
                                     Mentions légales
                                 </a> 
                             </li>
-                            <li class="footer-link"> 
-                                <a class="link" href="#">
+                            <li> 
+                                <a href="#">
                                     Contact
                                 </a> 
                             </li>

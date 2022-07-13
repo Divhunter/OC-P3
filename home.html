@@ -25,10 +25,16 @@
         <script src="https://kit.fontawesome.com/abea2822cd.js" crossorigin="anonymous"></script>
 
 		<!-- Booki core CSS file -->
+
         <link href="css/main.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/m-queries/desktop-max-1400.css" rel="stylesheet">
+        <link href="css/m-queries/desktop-max-1199.css" rel="stylesheet">
+        <link href="css/m-queries/tablette-max-991.css" rel="stylesheet">
+        <link href="css/m-queries/mobile-max-767.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
+
 		<title>Ohmyfood | Dynamisez une page web avec des animations CSS | Home</title>
     
 	</head>
@@ -45,37 +51,37 @@
                     
                     <!-- navigation start -->
 				    <!-- ================ -->
-                    <nav class="navbar wrap">
+                    <nav class="nav nav__home">
 
                         <!-- logo container start -->
                         <!-- ==================== -->
-                        <div class="logo-container container">
-                            <img class="logo" src="images/logo/ohmyfood.png" 
+                        <div class="nav__logo container">
+                            <img class="nav__logo__img" src="images/logo/ohmyfood.png" 
                             alt="logo de la société Ohmyfood de couleur noir">
                         </div>
                         <!-- logo container end -->
 
                         <!-- location container start -->
                         <!-- ======================== -->
-                        <div class="location container">
-                            <p class="city">
+                        <div class="nav__location container">
+                            <p class="nav__location__city">
                                 Paris, Belleville
                             </p>
-                            <i class="location fa-solid fa-location-dot"></i>
+                            <i class="nav__location__icon fa-solid fa-location-dot"></i>
                         </div>
                         <!-- location container end -->
 
                         <!-- menu container start -->
                         <!-- ==================== -->
-                        <section class="menu container">
-                            <h2 class="title-menu">
+                        <section class="nav__menu container">
+                            <h2 class="nav__menu__heading nav__menu-heading">
                                 Réservez le menu qui vous convient
                             </h2>
-                            <h3 class="subtitle-menu">
+                            <h3 class="nav__menu__subheading nav__menu-subheading">
                                 Découvrez des restaurants d'exception,
                                 séléctionnés par nos soins.
                             </h3>
-                            <a class="btn-menu btn" href="#restaurants">
+                            <a class="nav__menu__btn nav__menu-btn" href="#restaurants">
                                 Explorer nos restaurants
                             </a> 
                         </section>
@@ -95,25 +101,26 @@
 			        <!-- =========================== -->
                     <section class="functioning container">
 
-                        <!-- title -->
-                        <h2 class="functioning-title title">
+                        <!-- heading -->
+                        <h2 class="functioning__heading heading">
                             Fonctionnement
                         </h2>
 
                         <!-- filters start -->
                         <!-- ============= -->
-                        <ol class="filters">
-                            <li class="choose-a-restaurant filter">
+                        <ol class="functioning__filter">
+                            <li class="functioning__filter__choose">
                                 Choisissez un restaurant
-                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <i class="functioning__filter__choose__icon 
+                                fa-solid fa-mobile-screen-button"></i>
                             </li>
-                            <li class="compose-your-food filter">
+                            <li class="functioning__filter__compose">
                                 Composez votre menu 
-                                <i class="fa-solid fa-list"></i>
+                                <i class="functioning__filter__compose__icon fa-solid fa-list"></i>
                             </li>
-                            <li class="compose-your-food filter">
+                            <li class="functioning__filter__eat-in">
                                 Dégustez au restaurant 
-                                <i class="fa-solid fa-store"></i>
+                                <i class="functioning__filter__eat-in__icon fa-solid fa-store"></i>
                             </li>
                         </ol>
                         <!-- filters end -->
@@ -123,91 +130,99 @@
 
                     <!-- restaurant container start -->
 			        <!-- ========================== -->
-                    <section id="restaurants" class="restaurants container">
+                    <section id="restaurant" class="restaurant container">
 
-                        <!-- title -->
-                        <h2 class="restaurant-title title">
+                        <!-- heading -->
+                        <h2 class="restaurant__heading heading">
                             Restaurants
                         </h2>
 
-                        <a class="la-palette-du-gout restaurant-choice" href="la-palette-du-gout.html">
+                        <a class="restaurant__choice la-palette-du-gout" href="la-palette-du-gout.html">
                             <!-- picture -->
-                            <div class="choice-wrap">
-                                <img class="img-choice img-la-palette-du-gout" 
+                            <div class="restaurant__choice__img-box">
+                                <img class="restaurant__choice__img-box__img img-la-palette-du-gout" 
                                     src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
                                     alt="photo d'une belle assiette appétissante dont la garniture raffinée  
                                     est sobrement travaillée, tendance vert et orange">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-name">
+                            <h4 class="restaurant__choice__name">
                                 La palette du goût
                             </h4> 
                             <!-- additional info -->
-                            <h3 class="additional-info subtitule">
+                            <h3 class="restaurant__choice__info subheading">
                                 Ménilmontant
                             </h3>
-                            <!-- like -->
-                            <i class="like fa-thin fa-heart"></i>
+                            <!-- heart icon -->
+                            <img class="restaurant__choice__icon-heart"
+                                src="images/icons/heart.png" 
+                                alt="forme géométrique d'un coeur">
                         </a>
 
-                        <a class="la-note-enchantee restaurant-choice" href="la-note-enchantee.html">
+                        <a class="restaurant__choice la-note-enchantee" href="la-note-enchantee.html">
                             <!-- picture -->
-                            <div class="choice-wrap">
-                                <img class="img-choice img-la-note-enchantee" 
+                            <div class="restaurant__choice__img-box">
+                                <img class="restaurant__choice__img-box__img img-la-note-enchantee" 
                                     src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" 
                                     alt="photo d'une belle assiette appétissante dont la garniture raffinée  
                                     est sobrement travaillée, tendance marron orangé et beige">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-name">
+                            <h4 class="restaurant__choice__name">
                                 La note enchantée
                             </h4> 
                             <!-- additional info -->
-                            <h3 class="additional-info subtitule">
+                            <h3 class="restaurant__choice__info subheading">
                                 Charonne
                             </h3>
-                            <!-- like -->
-                            <i class="like fa-thin fa-heart"></i>
+                            <!-- heart icon -->
+                            <img class="restaurant__choice__icon-heart"
+                                src="images/icons/heart.png" 
+                                alt="forme géométrique d'un coeur">
                         </a>
 
-                        <a class="a-la-francaise restaurant-choice" href="a-la-francaise.html">
+                        <a class="restaurant__choice a-la-francaise" href="a-la-francaise.html">
                             <!-- picture -->
-                            <div class="choice-wrap">
-                                <img class="img-choice img-a-la-francaise" 
+                            <div class="restaurant__choice__img-box">
+                                <img class="restaurant__choice__img-box__img img-a-la-francaise" 
                                     src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" 
                                     alt="photo d'une belle assiette appétissante dont la garniture raffinée  
                                     est sobrement travaillée, tendance blanc et vert">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-name">
+                            <h4 class="restaurant__choice__name">
                                 &Agrave; la française
                             </h4> 
                             <!-- additional info -->
-                            <h3 class="additional-info subtitle">
+                            <h3 class="restaurant__choice__info subheading">
                                 Cité rouge
                             </h3>
-                            <!-- like -->
-                            <i class="like fa-thin fa-heart"></i>
+                            <!-- heart icon -->
+                            <img class="restaurant__choice__icon-heart"
+                                src="images/icons/heart.png" 
+                                alt="forme géométrique d'un coeur">
                         </a>
 
-                        <a class="le-delice-des-sens restaurant-choice" href="le-delice-des-sens">
+                        <a class="restaurant__choice le-delice-des-sens" href="le-delice-des-sens">
                             <!-- picture -->
-                            <div class="choice-wrap">
-                                <img class="img-choice img-le-delice-des-sens" 
+                            <div class="restaurant__choice__img-box">
+                                <img class="restaurant__choice__img-box__img img-le-delice-des-sens" 
                                     src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" 
                                     alt="photo d'une belle assiette appétissante dont la garniture raffinée  
                                     est sobrement travaillée, tendance orange claire et blanc">
                             </div>
                             <!-- restaurant name -->
-                            <h4 class="restaurant-name">
+                            <h4 class="restaurant__choice__name">
                                 Le délice des sens
                             </h4> 
                             <!-- additional info -->
-                            <h3 class="additional-info subtitle">
+                            <h3 class="restaurant__choice__info subheading">
                                 Folie-Méricourt
                             </h3>
-                            <!-- like -->
-                            <i class="like fa-thin fa-heart"></i>
+                            <!-- heart icon -->
+                            <img class="restaurant__choice__icon-heart"
+                                src="images/icons/heart.png" 
+                                alt="forme géométrique d'un coeur">
                         </a>
                         
                     </section>
@@ -222,36 +237,36 @@
 
                     <!-- footer wrap start -->
                     <!-- ================= -->
-                    <div class="footer-wrap wrap">
+                    <div class="footer__wrap">
                     
                         <!-- logo -->
-                        <span class="logo-font-style">
+                        <span class="footer__wrap__logo-font-style">
                             ohmyfood
                         </span>
 
                         <!-- footer menu start -->
-                        <!-- ================ -->
-                        <ul class="footer-menu">
+                        <!-- ================= -->
+                        <ul class="footer__wrap__menu">
                             
-                            <li class="footer-link">
-                                <a class="link" href="#">
+                            <li>
+                                <a href="#">
                                     Proposer un restaurant
                                 </a>
-                                <i class="icon-footer-one fa-solid fa-utensils"></i>
+                                <i class="footer__wrap__menu__icon-utensils fa-solid fa-utensils"></i>
                             </li>
-                            <li class="footer-link">
-                                <a class="link" href="#">
+                            <li>
+                                <a href="#">
                                     Devenir partenaire
                                 </a>
-                                <i class="icon-footer-two fa-solid fa-handshake-angle"></i>
+                                <i class="footer__wrap__menu__icon-hands fa-solid fa-handshake-angle"></i>
                             </li>
-                            <li class="footer-link"> 
-                                <a class="link" href="#">
+                            <li> 
+                                <a href="#">
                                     Mentions légales
                                 </a> 
                             </li>
-                            <li class="footer-link"> 
-                                <a class="link" href="#">
+                            <li> 
+                                <a href="#">
                                     Contact
                                 </a> 
                             </li>

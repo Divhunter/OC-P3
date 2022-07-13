@@ -25,10 +25,15 @@
         <script src="https://kit.fontawesome.com/abea2822cd.js" crossorigin="anonymous"></script>
 
 		<!-- Booki core CSS file -->
-        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
         <link href="css/fonts.css" rel="stylesheet">
+        <link href="css/m-queries/desktop-max-1400.css" rel="stylesheet">
+        <link href="css/m-queries/desktop-max-1199.css" rel="stylesheet">
+        <link href="css/m-queries/tablette-max-991.css" rel="stylesheet">
+        <link href="css/m-queries/mobile-max-767.css" rel="stylesheet">
         <link href="css/menu-card.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
 
 		<title>Ohmyfood | Dynamisez une page web avec des animations CSS | La note enchantée</title>
     
@@ -46,24 +51,24 @@
                     
                     <!-- navigation start -->
 				    <!-- ================ -->
-                    <nav class="navbar wrap">
+                    <nav class="nav nav__food">
 
-                        <!-- logo container start -->
-                        <!-- ==================== -->
-                        <div class="logo-container container">
-                            <img class="logo" src="images/logo/ohmyfood.png" 
+                        <!-- logo box start -->
+                        <!-- ============== -->
+                        <div class="nav__logo__box container">
+                            <img class="nav__logo__box__logo" src="images/logo/ohmyfood.png" 
                             alt="logo de la société Ohmyfood de couleur noir">
 
                             <!-- back home -->
-                            <a class="arrow" href="home.html">
+                            <a class="nav__logo__box__arrow" href="home.html">
                                 &#8592;
                             </a>
                         </div>
-                        <!-- logo container end -->
+                        <!-- logo box end -->
 
                         <!-- picutre -->
-                        <div class="picture container">
-                            <img class="img-choice img-la-note-enchantee" 
+                        <div class="nav__food__picture container">
+                            <img class="nav__food__picture__img-choice img-la-note-enchantee" 
                                 src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" 
                                 alt="photo d'une belle assiette appétissante dont la garniture raffinée  
                                     est sobrement travaillée, tendance marron orangé et beige">
@@ -81,52 +86,54 @@
 
                     <!-- meal choice start -->
 			        <!-- ================= -->
-                    <form id="meal-la-note-enchantee" 
-                        class="meal-choice wrap" 
+                    <form id="form meal-la-note-enchantee" 
+                        class="form__meal-choice" 
                         name="meal-la-note-enchantee"  
                         method="post">
 
-                        <!-- title start -->
-			            <!-- =========== -->
-                        <h1 class="meal-title">
+                        <!-- heading -->
+                        <h1 class="form__meal-heading">
                             La note enchantée
                         </h1>
-                        <i class="meal-like fa-thin fa-heart"></i>
-                        <!-- title end -->
+
+                        <!-- heart icon -->
+                        <img class="form__meal-like"
+                        src="images/icons/heart.png" 
+                        alt="forme géométrique d'un coeur">
 
                         <!-- entree start -->
 			            <!-- ============ -->
-                        <fieldset class="entree container">
+                        <fieldset class="form__field-entree container">
 
                             <!-- additional info -->
-                            <legend class="meal-subtitle subtitle">
+                            <legend class="form__field--subheading subheading">
                                 ENTR&Eacute;ES
                             </legend>
 
                             <!-- entree list start -->
 			                <!-- ================= -->
-                            <ul class="entree-list list">
+                            <ul class="form__field--list entree-list">
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Ravioles de foie gras
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Accompagnées de leur crème à la truffe
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         25€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="entree-check" 
                                         name="entree-name-la-note-enchantee" 
                                         id="entree-la-note-enchantee-one">
@@ -139,24 +146,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Caviar osciètre
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Sur blini à la farine de blé noir
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         35€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="entree-check" 
                                         name="entree-name-la-note-enchantee" 
                                         id="entree-la-note-enchantee-two">
@@ -169,24 +176,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Homard et espuma de langoustines
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Mariné aux zests d'orange
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         20€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="entree-check" 
                                         name="entree-name-la-note-enchantee" 
                                         id="entree-la-note-enchantee-tree">
@@ -199,24 +206,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Foie gras de canard cuit entier
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Confiture de figue et pain toasté
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         35€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="entree-check" 
                                         name="entree-name-la-note-enchantee" 
                                         id="entree-la-note-enchantee-four">
@@ -235,37 +242,37 @@
 
                         <!-- main meal start -->
 			            <!-- =============== -->
-                        <fieldset class="main-meal container">
+                        <fieldset class="form__field-main-meal container">
 
                             <!-- additional info -->
-                            <legend class="meal-subtitle subtitle">
+                            <legend class="form__field--subheading subheading">
                                 PLAT
                             </legend>
 
                             <!-- main meal list start -->
 			                <!-- ==================== -->
-                            <ul class="main-meal-list list">
+                            <ul class="form__field--list main-meal-list">
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Noix de coquilles Saint-Jacques
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Sur lit de purée de céleri-rave
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         40€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="main-meal-check" 
                                         name="main-meal-name-la-note-enchantee" 
                                         id="main-meal-la-note-enchantee-one">
@@ -278,24 +285,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Langoustine poêlée
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Purée de patate douce
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         35€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="main-meal-check" 
                                         name="main-meal-name-la-note-enchantee" 
                                         id="main-meal-la-note-enchantee-two">
@@ -308,24 +315,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Mijoté de queue de beuf
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Et riz sauvage au zests de citron
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         44€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="main-meal-check" 
                                         name="main-meal-name-la-note-enchantee" 
                                         id="main-meal-la-note-enchantee-tree">
@@ -344,37 +351,37 @@
 
                         <!-- dessert start -->
 			            <!-- ============= -->
-                        <fieldset class="dessert container">
+                        <fieldset class="form__field-dessert container">
 
                             <!-- additional info -->
-                            <legend class="meal-subtitle subtitle">
+                            <legend class="form__field--subheading subheading">
                                 DESSERTS
                             </legend>
 
                             <!-- dessert list start -->
 			                <!-- ================== -->
-                            <ul class="dessert-list list">
+                            <ul class="form__field--list dessert-list">
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Macaron noisette et chocolat
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Glace au caramel brun et sel de Guérande
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         18€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="dessert-check" 
                                         name="dessert-name-la-note-enchantee" 
                                         id="dessert-la-note-enchantee-one">
@@ -387,24 +394,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Baba au rhum revisité
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Avec son coulis de cirton
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         22€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="dessert-check" 
                                         name="dessert-name-la-note-enchantee" 
                                         id="dessert-la-note-enchantee-two">
@@ -417,24 +424,24 @@
 
                                 <!-- meal-box start -->
                                 <!-- ============== -->
-                                <li class="meal-box">
+                                <li>
 
                                     <!-- meal name -->
-                                    <h4 class="meal-name">
+                                    <h4 class="form__field--meal-name">
                                         Trate au citron méringuée
                                     </h4> 
                                     <!-- meal additional info -->
-                                    <p class="meal-additional-info">
+                                    <p class="form__field--meal-additional-info">
                                         Destructurée
                                     </p>
                                     <!-- meal price -->
-                                    <p class="meal-price">
+                                    <p class="form__field--meal-price">
                                         23€
                                     </p>
 
                                     <!-- check start -->
                                     <!-- =========== -->
-                                    <div class="check-container">
+                                    <div class="form__field--check-container">
                                         <input type="radio" class="dessert-check" 
                                         name="dessert-name-la-note-enchantee" 
                                         id="dessert-la-note-enchantee-tree">
@@ -452,7 +459,7 @@
                         <!-- dessert end -->
 
                         <input id="btn-meal-la-note-enchantee" 
-                        class="btn-meal-la-note-enchantee btn" 
+                        class="form__field--btn" 
                         type="submit" value="Commander">
                         
                     </form>
@@ -467,36 +474,36 @@
 
                     <!-- footer wrap start -->
                     <!-- ================= -->
-                    <div class="footer-wrap wrap">
+                    <div class="footer__wrap">
                     
                         <!-- logo -->
-                        <span class="logo-font-style">
+                        <span class="footer__wrap__logo-font-style">
                             ohmyfood
                         </span>
 
                         <!-- footer menu start -->
-                        <!-- ================ -->
-                        <ul class="footer-menu">
+                        <!-- ================= -->
+                        <ul class="footer__wrap__menu">
                             
-                            <li class="footer-link">
-                                <a class="link" href="#">
+                            <li>
+                                <a href="#">
                                     Proposer un restaurant
                                 </a>
-                                <i class="icon-footer-one fa-solid fa-utensils"></i>
+                                <i class="footer__wrap__menu__icon-utensils fa-solid fa-utensils"></i>
                             </li>
-                            <li class="footer-link">
-                                <a class="link" href="#">
+                            <li>
+                                <a href="#">
                                     Devenir partenaire
                                 </a>
-                                <i class="icon-footer-two fa-solid fa-handshake-angle"></i>
+                                <i class="footer__wrap__menu__icon-hands fa-solid fa-handshake-angle"></i>
                             </li>
-                            <li class="footer-link"> 
-                                <a class="link" href="#">
+                            <li> 
+                                <a href="#">
                                     Mentions légales
                                 </a> 
                             </li>
-                            <li class="footer-link"> 
-                                <a class="link" href="#">
+                            <li> 
+                                <a href="#">
                                     Contact
                                 </a> 
                             </li>
