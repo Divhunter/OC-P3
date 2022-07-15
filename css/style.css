@@ -1,0 +1,213 @@
+/*.design{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: .4;
+}*/
+footer{
+    display: none;
+}
+
+/**********************************************************************************************/
+/******************************************** header ******************************************/
+/**********************************************************************************************/
+.nav__logo{
+    text-align: center;
+    height: auto;
+    padding-bottom: 9px;
+    background-color: white;
+}
+.nav__logo__img{
+    margin-top: 22px;
+    max-width: 165px;
+    width: 100%;
+    height: auto;
+}
+.nav__location{
+    margin-top: -26px;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(234, 234, 234);
+    box-shadow: inset 0 2px 5px 0 rgba(200, 200, 200, .8);
+} 
+.nav__location__city{
+    position: relative;
+    top: 17px;
+    margin-left: -29px;
+}
+.nav__menu{
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+}
+.nav__menu__heading--margin{
+    margin-top: 37.5px;
+    margin-left: 11%;
+    margin-right: 15%;
+}
+.nav__menu__subheading--margin{
+    margin-top: -5.5px;
+    margin-left: 7.3%;
+    margin-right: 5%;
+}
+.nav__menu__btn{
+    display: inline-block;
+    margin-top: 13px;
+    margin-left: 6px;
+    width: 219px;
+    height: 50px;
+    padding-top: 15px;
+    border-radius: 50px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: rgba(50, 50, 93, 0.4) 0px 8px 8px -2px, 
+    rgba(0, 0, 0, 0.4) 0px 3px 5px -6px;
+    margin-bottom: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: white;
+}
+
+/**********************************************************************************************/
+/********************************************* main *******************************************/
+/**********************************************************************************************/
+
+/*************************************** functioning ******************************************/
+.functioning{
+    background-color: white;
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+    padding-top: 56px;
+    padding-bottom: 40px;
+}
+.functioning__heading{
+    margin-top: -6px;
+    margin-bottom: 30px;
+}
+.functioning__list li{
+    width: auto;
+    height: 72px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 25.7px;
+    margin-left: -30px;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 6px 12px -2px, 
+    rgba(200, 200, 200, 0.25) 0px 3px 7px -3px;
+    transition: all .5s;
+    -webkit-transition: all .5s;  
+}
+.functioning__list li:hover 
+.functioning__list__icon{
+    color: #9356DC;
+    transition: color .5s;
+    -webkit-transition: color .5s;  
+}
+.number{
+    display: inline-block;
+    text-align: center;
+    margin-top: 25.6px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding-top: 5px;
+    margin-left: -12px;
+    background-color: #9356DC;
+    color: white;
+    font-size: 14px;
+}
+.functioning__list li i{
+    margin-top: 2px;
+    margin-left: 18px;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    transition: color .5s;
+    -webkit-transition: color .5s;
+}
+.functioning__list__headingOne{
+    margin-left: 22px;
+}
+.functioning__list__headingTwo{
+    margin-left: 17px;
+}
+.functioning__list__headingThree{
+    margin-left: 14px;
+}
+
+/******************* functioning fx *******************/
+.functioning__list li:hover {
+    background-color: rgb(241, 230, 255);
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 12px -2px, 
+    rgba(50, 50, 50, 0.4) 0px 3px 7px -3px;
+    transition: all .5s;
+    -webkit-transition: all .5s; 
+}
+
+/*************************************** restaurant *******************************************/
+.restaurant{
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+    padding-top: 34px;
+    height: auto;
+    background-color: rgba(240, 240, 240);
+}
+.restaurant__heading{
+    padding-bottom: 2px;
+}
+.restaurant__choice{
+    display: inline-block;
+    margin-bottom: 18px;
+    width: 100%;
+    height: 251px;
+    border-radius: 15px;
+    background-color: rgba(250, 250, 250, 0.3);
+}
+.restaurant__choice__imgBox{
+    width: auto;
+    height: 175px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+.restaurant__choice__imgBox__img{
+    min-width: 340px;
+    width: 100%;
+    height: auto;
+}
+.img-la-palette-du-gout,
+.img-a-la-francaise{
+    margin-top: -50px;
+}
+.img-la-note-enchantee{
+    margin-top: -155px;
+}
+.img-le-delice-des-sens{
+    margin-top: -60px;
+}
+.fa-heart{
+    float: right;
+    margin-right: 25px;
+    margin-top: 21px;
+    font-size: 20px;
+    color: black;
+}
+.restaurant__choice__name{
+    margin-top: 14px;
+    margin-left: 13px;
+}
+.restaurant__choice__info{
+    margin-top: -13px;
+    margin-left: 13px;
+}
+
+/**********************************************************************************************/
+/******************************************** footer ******************************************/
+/**********************************************************************************************/
+
+
+
+
+    
