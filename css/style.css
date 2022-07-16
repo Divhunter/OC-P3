@@ -217,17 +217,11 @@
     -webkit-background-clip:text;
     background-position-y: 20px;
     color: transparent;
+    transition: background-position-y 3s;
 }
 .fa-heart:hover{
-    animation: animateHeart 1.5s ease-in-out;
-}
-@keyframes animateHeart {
-    0% {
-        background-position-y: 20px;
-    }
-    100% {
-        background-position-y: 0px;
-    }
+    background-position-y: 0px;
+    transition: background-position-y 1.5s;
 }
 .restaurant__choice__name {
     margin-top: 14px;
