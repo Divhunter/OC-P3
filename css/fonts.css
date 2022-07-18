@@ -20,14 +20,23 @@ ul{
     color: rgb(100, 100, 100);
 }
 h3{
-    font-size: 23.8px;
-    font-size: 18px;
     color: black;
 }
 h4{
-    font-weight: 300;
-    font-size: 17px;
     color: black;
+    font-weight: 300;
+}
+h3 .restaurant__choice__name{
+    font-size: 23.8px;
+}
+.form__field__info__name{
+    font-size: 17.3px;
+}
+h4 .restaurant__choice__info{
+    font-size: 17px;
+}
+p{
+    font-size: 15px;
 }
 .footer__wrap__logo-font-style{
     font-family: 'Shrikhand', cursive;

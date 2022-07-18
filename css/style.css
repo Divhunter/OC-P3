@@ -41,17 +41,19 @@
     margin-left: 7.3%;
     margin-right: 5%;
 }
-.nav__menu__btn{
-    display: inline-block;
-    margin-top: 13px;
-    margin-left: 6px;
-    width: 219px;
+.btn{
     height: 50px;
-    padding-top: 15px;
     border-radius: 50px;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: rgba(50, 50, 93, 0.4) 0px 8px 8px -2px, 
     rgba(0, 0, 0, 0.4) 0px 3px 5px -6px;
+}
+.nav__menu__btn{
+    display: inline-block;
+    width: 219px;
+    padding-top: 15px;
+    margin-top: 13px;
+    margin-left: 6px;
     transition: all .5s;
     -webkit-transition: all .5s; 
     margin-bottom: 56px;
@@ -61,7 +63,7 @@
     letter-spacing: .5px;
     color: white;
 }
-.nav__menu__btn:hover{
+.btn:hover{
     background: linear-gradient(#fd90de, #9b65dd);
     box-shadow: rgba(50, 50, 93, 0.5) 0px 8px 8px -2px, 
     rgba(0, 0, 0, 0.4) 0px 3px 5px -6px;
@@ -203,13 +205,18 @@
 .img-le-delice-des-sens{
     margin-top: -60px;
 }
-.fa-heart{
+.fa-heart--restaurantPosition{
     float: right;
     margin-right: 25px;
-    margin-top: 21px;
+    margin-top: 20px;
+}
+.fa-heart{
     font-size: 20px;
     width: 20px;
     height: 20px;
+    -ms-transform: scale(1, 1.15); 
+    -webkit-transform: scale(1, 1.15); 
+    transform: scale(1, 1.15); 
     -webkit-text-stroke: 1px black;
     background: linear-gradient(#FF79DA, #9356DC);
     background-clip:text;
@@ -219,7 +226,9 @@
     color: transparent;
     transition: background-position-y 3s;
 }
-.fa-heart:hover{
+
+/********************** heart fx **********************/
+.fa-heart--hover:hover{
     background-position-y: 0px;
     transition: background-position-y 1.5s;
 }
@@ -236,6 +245,7 @@
 /******************************************** footer ******************************************/
 /**********************************************************************************************/
 .footer__wrap{
+    top: 0;
     padding-left: 7%;
     padding-top: 24px;
     padding-bottom: 20px;

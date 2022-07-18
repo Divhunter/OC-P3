@@ -55,22 +55,25 @@
 				    <!-- ================ -->
                     <nav class="nav nav-food">
 
-                        <!-- logo box start -->
-                        <!-- ============== -->
-                        <div class="nav__logo__box container">
-                            <img class="nav__logo__box__logo" src="images/logo/ohmyfood.png" 
+                        <!-- logo container start -->
+                        <!-- ==================== -->
+                        <div class="nav__logo container">
+
+                            <!-- back home  arrow -->
+                            <a class="nav__logo__arrow" href="home.html">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </a>
+
+                            <!-- logo -->
+                            <img class="nav__logo__img nav__logo__img--margin" src="images/logo/ohmyfood.png" 
                             alt="logo de la société Ohmyfood de couleur noir">
 
-                            <!-- back home -->
-                            <a class="nav__logo__box__arrow" href="home.html">
-                                &#8592;
-                            </a>
                         </div>
-                        <!-- logo box end -->
+                        <!-- logo container end -->
 
                         <!-- picutre -->
                         <div class="nav__food__picture container">
-                            <img class="nav__food__picture__img-choice img-la-palette-du-gout" 
+                            <img class="nav__food__picture__img img-la-palette-du-gout" 
                                 src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
                                 alt="photo d'une belle assiette appétissante dont la garniture raffinée  
                                     est sobrement travaillée, tendance vert et orange">
@@ -88,123 +91,133 @@
 
                     <!-- meal choice start -->
 			        <!-- ================= -->
-                    <form id="meal-la-palette-du-gout" 
-                        class="form__meal-choice" 
-                        name="meal-la-palette-du-gout"  
+                    <form id="meal-la-palette-du-gout" class="form__meal container"
+                        class="form__meal__choice" 
+                        name="meal-la-palette-du-goût"  
                         method="post">
 
                         <!-- heading -->
-                        <h1 class="form__meal-heading">
-                            La palette du gout
+                        <h1 class="form__meal__heading">
+                            La palette du goût
                         </h1>
 
                         <!-- heart icon -->
-                        <img class="form__meal-like"
-                        src="images/icons/heart.png" 
-                        alt="forme géométrique d'un coeur">
+                        <i class="fa-solid fa-heart fa-heart--mealPosition"></i>
 
                         <!-- entree start -->
 			            <!-- ============ -->
-                        <fieldset class="form__field-entree container">
+                        <fieldset class="form__field entree container">
 
                             <!-- additional info -->
-                            <legend class="form__field--subheading subheading">
+                            <legend class="form__field__subheading">
                                 ENTR&Eacute;ES
                             </legend>
 
                             <!-- entree list start -->
 			                <!-- ================= -->
-                            <ul class="form__field--list entree-list">
+                            <ul class="form__field__list">
 
-                                <!-- meal-box start -->
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Fricassée d'escargot
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Au piment d'espelette
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        25€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="entree-check" 
-                                        name="entree-name-la-palette-du-gout" 
-                                        id="entree-la-palette-du-gout-one">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Fricassée d'escargot
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Au piment d'espelette
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            25€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
 
-                                <!-- meal-box start -->
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
+
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Foie gras de canard mi-cuit
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Et ses copeaux de truffe noire
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        35€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="entree-check" 
-                                        name="entree-name-la-palette-du-gout" 
-                                        id="entree-la-palette-du-gout-two">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Foie gras de canard mi-cuit
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Et ses copeaux de truffe noire
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            35€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
 
-                                <!-- meal-box start -->
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
+
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Oeuf au plat
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Assaisonné à la truffe sur lit de tomates
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        20€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="entree-check" 
-                                        name="entree-name-la-palette-du-gout" 
-                                        id="entree-la-palette-du-gout-tree">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Oeuf au plat
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Assaisonné à la truffe sur lit de tomates
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            20€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
+
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
 
                             </ul>
                             <!-- entree list end -->
@@ -214,106 +227,118 @@
 
                         <!-- main meal start -->
 			            <!-- =============== -->
-                        <fieldset class="form__field-main-meal container">
+                        <fieldset class="form__field main container">
 
                             <!-- additional info -->
-                            <legend class="form__field--subheading subheading">
-                                PLAT
+                            <legend class="form__field__subheading">
+                                PLATS
                             </legend>
 
                             <!-- main meal list start -->
 			                <!-- ==================== -->
-                            <ul class="form__field--list main-meal-list">
+                            <ul class="form__field__list">
 
-                                <!-- meal-box start -->
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Filet de boeuf aux herbes
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Accompagné de sa ribambelle de légumes
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        40€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="main-meal-check" 
-                                        name="main-meal-name-la-palette-du-gout" 
-                                        id="main-meal-la-palette-du-gout-one">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Filet de boeuf aux herbes
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Accompagné de sa ribambelle de légumes
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            40€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
 
-                                <!-- meal-box start -->
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
+
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Parmentier de queue de boeuf
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        &Agrave; la truffe noire sur sa purée de panais
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        35€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="main-meal-check" 
-                                        name="main-meal-name-la-palette-du-gout" 
-                                        id="main-meal-la-palette-du-gout-two">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Parmentier de queue de boeuf
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            &Agrave; la truffe noire sur sa purée de panais
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            35€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
 
-                                <!-- meal-box start -->
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
+
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Filet de Turbo
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Aux agrumes
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        44€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="main-meal-check" 
-                                        name="main-meal-name-la-palette-du-gout" 
-                                        id="main-meal-la-palette-du-gout-tree">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Filet de Turbot
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Aux agrumes
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            44€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
+
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
 
                             </ul>
                             <!-- main meal list end -->
@@ -323,106 +348,118 @@
 
                         <!-- dessert start -->
 			            <!-- ============= -->
-                        <fieldset class="form__field-dessert container">
+                        <fieldset class="form__field dessert container">
 
                             <!-- additional info -->
-                            <legend class="form__field--subheading subheading">
+                            <legend class="form__field__subheading">
                                 DESSERTS
                             </legend>
 
                             <!-- dessert list start -->
 			                <!-- ================== -->
-                            <ul class="form__field--list dessert-list">
+                            <ul class="form__field__list">
 
-                                <!-- meal-box start -->
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Paris-Brest
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Revisité
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        18€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="dessert-check" 
-                                        name="dessert-name-la-palette-du-gout" 
-                                        id="dessert-la-palette-du-gout-one">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Paris-Brest
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Revisité
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            18€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
 
-                                <!-- meal-box start -->
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
+
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Macaron au chocolat d'exception
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Et glace à la vanille de Madagascar
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        22€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="dessert-check" 
-                                        name="dessert-name-la-palette-du-gout" 
-                                        id="dessert-la-palette-du-gout-two">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Macaron au chocolat d'exception
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Et glace à la vanille de Madagascar
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            22€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
 
-                                <!-- meal-box start -->
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
+
+                                <!-- meal box start -->
                                 <!-- ============== -->
                                 <li>
 
-                                    <!-- meal name -->
-                                    <h4 class="form__field--meal-name">
-                                        Mousse au chocolat
-                                    </h4> 
-                                    <!-- meal additional info -->
-                                    <p class="form__field--meal-additional-info">
-                                        Au piment d'espelette et à la truffe noire
-                                    </p>
-                                    <!-- meal price -->
-                                    <p class="form__field--meal-price">
-                                        23€
-                                    </p>
+                                    <!-- meal info start -->
+                                    <!-- =============== -->
 
-                                    <!-- check start -->
-                                    <!-- =========== -->
-                                    <div class="form__field--check-container">
-                                        <input type="radio" class="dessert-check" 
-                                        name="dessert-name-la-palette-du-gout" 
-                                        id="dessert-la-palette-du-gout-tree">
-                                        <i class="check-design fa-solid fa-circle-check"></i>
+                                    <div class="form__field__info">
+                                        <!-- meal name -->
+                                        <h3 class="form__field__info__name">
+                                            Mousse au chocolat
+                                        </h3> 
+                                        <!-- meal additional info -->
+                                        <p class="form__field__info__additional">
+                                            Au piment d'espelette et à la truffe noire
+                                        </p>
+                                        <!-- meal price -->
+                                        <p class="form__field__info__price">
+                                            23€
+                                        </p>
                                     </div>
-                                    <!-- check end -->
+
+                                    <!-- meal info end -->
 
                                 </li>
-                                <!-- meal-box end -->
+                                <!-- meal box end -->
+
+                                <!-- check start -->
+                                <!-- =========== -->
+                                <div class="form__field__check">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <!-- check end -->
 
                             </ul>
                             <!-- dessert list end -->
@@ -430,10 +467,10 @@
                         </fieldset>
                         <!-- dessert end -->
 
-                        <input id="btn-meal-la-palette-du-gout" 
-                        class="form__field--btn" 
-                        type="submit" value="Commander">
-                        
+                        <div class="form__field__container container">
+                            <input class="form__field__button btn" type="submit" value="Commander">
+                        </div>
+
                     </form>
                     <!-- food choice end -->
 
@@ -446,7 +483,7 @@
 
                     <!-- footer wrap start -->
                     <!-- ================= -->
-                    <div class="footer__wrap">
+                    <div class="footer__wrap container">
                     
                         <!-- logo -->
                         <span class="footer__wrap__logo-font-style">
@@ -457,24 +494,24 @@
                         <!-- ================= -->
                         <ul class="footer__wrap__menu">
                             
-                            <li>
+                            <li class="footer__wrap__menu__one">
+                                <i class="footer__wrap__menu__iconUtensils fa-solid fa-utensils"></i>
                                 <a href="#">
                                     Proposer un restaurant
                                 </a>
-                                <i class="footer__wrap__menu__icon-utensils fa-solid fa-utensils"></i>
                             </li>
-                            <li>
+                            <li class="footer__wrap__menu__two">
+                                <i class="footer__wrap__menu__iconHands fa-solid fa-handshake-angle"></i>
                                 <a href="#">
                                     Devenir partenaire
                                 </a>
-                                <i class="footer__wrap__menu__icon-hands fa-solid fa-handshake-angle"></i>
                             </li>
-                            <li> 
+                            <li class="footer__wrap__menu__three"> 
                                 <a href="#">
                                     Mentions légales
                                 </a> 
                             </li>
-                            <li> 
+                            <li class="footer__wrap__menu__four"> 
                                 <a href="#">
                                     Contact
                                 </a> 
