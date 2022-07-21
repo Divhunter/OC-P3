@@ -28,6 +28,7 @@
 .nav__menu{
     text-align: center;
     display: inline-block;
+    width: 100%;
     height: auto;
     background-color: rgb(240, 240, 240);
 }
@@ -47,6 +48,7 @@
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: rgba(50, 50, 93, 0.4) 0px 8px 8px -2px, 
     rgba(0, 0, 0, 0.4) 0px 3px 5px -6px;
+    cursor: pointer;
 }
 .nav__menu__btn{
     display: inline-block;
@@ -117,6 +119,7 @@
     background-color: #9356DC;
     color: white;
     font-size: 14px;
+    cursor: default;
 }
 .functioning__list li i{
     margin-top: 2px;
@@ -126,17 +129,20 @@
     transition: color .5s;
     -webkit-transition: color .5s;
 }
-.functioning__list__headingOne{
+.functioning__list__heading{
+    cursor: default;
+}
+.headingOne{
     margin-left: 22px;
 }
-.functioning__list__headingTwo{
+.headingTwo{
     margin-left: 17px;
 }
-.functioning__list__headingThree{
+.headingThree{
     margin-left: 14px;
 }
 
-/******************* functioning fx *******************/
+/******************* functioning__list "hover-fx" *******************/
 .functioning__list li:hover {
     background-color: rgb(241, 230, 255);
     box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 12px -2px, 
@@ -195,8 +201,8 @@
     width: 100%;
     height: auto;
 }
-.img-la-palette-du-gout,
-.img-a-la-francaise{
+.img-a-la-francaise,
+.img-la-palette-du-gout{
     margin-top: -50px;
 }
 .img-la-note-enchantee{
@@ -248,7 +254,7 @@
     top: 0;
     padding-left: 7%;
     padding-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     height: auto;
     background-color: rgb(53, 53, 53);
 }
