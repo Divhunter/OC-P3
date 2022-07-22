@@ -257,11 +257,6 @@
     height: auto;
     background-color: rgb(53, 53, 53);
 }
-.footer__wrap__logo-font-style{
-    font-family: 'Shrikhand', cursive;;
-    font-size: 17px;
-    color: white;
-}
 .footer__wrap__menu li a{
     color: white;
     font-weight: 400;
