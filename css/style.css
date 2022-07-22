@@ -9,8 +9,7 @@
 }
 .nav__logo__img{
     margin-top: 22px;
-    max-width: 165px;
-    width: 100%;
+    width: 165px;
     height: auto;
 }
 .nav__location{
@@ -257,6 +256,11 @@
     padding-bottom: 22px;
     height: auto;
     background-color: rgb(53, 53, 53);
+}
+.footer__wrap__logo-font-style{
+    font-family: 'Shrikhand', cursive;;
+    font-size: 17px;
+    color: white;
 }
 .footer__wrap__menu li a{
     color: white;

@@ -1,7 +1,7 @@
 /************************************************************************************************************/
 /********************************************* media queries ************************************************/
-/************************* New rules if the screen is at more 768px and least 991px *************************/
-@media screen and (min-width: 768px) and (max-width: 991px){
+/********************************* New rules if the screen is at more 768px *********************************/
+@media screen and (min-width: 768px){
 
     /**********************************************************************************************/
     /******************************************** header ******************************************/
@@ -28,7 +28,7 @@
     }
     .fa-heart--mealPosition{
         margin-top: -67px;
-        margin-right: 45px;
+        margin-right: 11%;
     }
     .form__field__subheading{
         font-size: 20px;
@@ -37,6 +37,7 @@
     }
     .form__field__list{ 
        margin-top: 20px;
+       padding-right: 3.5%;
     }
     .form__field__list li{
         margin-bottom: 20px;
@@ -89,9 +90,22 @@
     /**********************************************************************************************/
     /******************************************** footer ******************************************/
     /**********************************************************************************************/
-    .footer__wrap{
-        padding-top: 24px;
-        padding-bottom: 22px;
+    .footer__wrap__logo-font-style{
+        font-size: 22px;
+    }
+    .footer__wrap__menu__one,
+    .footer__wrap__menu__two{
+        margin-left: -15px;
+    }
+    .footer__wrap__menu__iconUtensils{
+        font-size: 16px;
+        margin-left: -26px;
+        margin-top: 0;
+    }
+    .footer__wrap__menu__iconHands{
+        font-size: 15px;
+        margin-left: -27px;
+        margin-top: 0;
     }
 
     /******************* form__field__list "on page load animation" *******************/

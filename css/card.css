@@ -16,10 +16,10 @@
     max-width: 1400px;
     width: 100%;
     height: 270px;
+    padding-top: 50px;
     overflow: hidden;
 }
 .nav__food__picture__img{
-    position: relative;
     right: 15px;
     width: 108%;
     height: auto;
@@ -148,7 +148,8 @@ fieldset{
     cursor: pointer;
 }
 .form__field__btnBox__button{
-    margin-bottom: 81px;
+    margin-top: 0;
+    margin-bottom: 71px;
     margin-left: -21px;
     width: 185px;
     border: none;
@@ -157,34 +158,46 @@ fieldset{
     letter-spacing: .5px;
     color: white;
 }
+.footer__wrap__logo-font-style{
+    font-family: 'Shrikhand', cursive;;
+    font-size: 17px;
+    color: white;
+}
 
 /******************* form__field__list "on page load animation" *******************/
 /******************* opacity, margin-top *******************/
+.form__field__subheading{
+    animation-duration: 2s;
+	animation-name: opacity;
+}
 .entree-one,
 .main-one,
 .dessert-one{
-    animation-duration: 1s, 3s;
+    animation-duration: 4s, 5s;
 	animation-name: opacity, marginTop;
 }
 .entree-two,
 .main-two,
 .dessert-two{
-    animation-duration: 2s, 4s;
+    animation-duration: 6s, 7s;
 	animation-name: opacity, marginTop;
 }
 .entree-three,
 .main-three,
 .dessert-three{
-    animation-duration: 3s, 5s;
+    animation-duration: 8s, 9s;
 	animation-name: opacity, marginTop;
 }
 .entree-four{
-    animation-duration: 4s, 5s;
+    animation-duration: 10s, 11s;
 	animation-name: opacity, marginTop;
 }
 @keyframes opacity{
 	0%{
         opacity: 0; 
+    }
+    50%{
+        opacity: .8; 
     }
     100%{ 
         opacity: 1; 
