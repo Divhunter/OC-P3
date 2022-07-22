@@ -42,34 +42,34 @@
     margin-right: 5%;
 }
 .btn{
-    height: 50px;
-    border-radius: 50px;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: rgba(50, 50, 93, 0.4) 0px 8px 8px -2px, 
     rgba(0, 0, 0, 0.4) 0px 3px 5px -6px;
     cursor: pointer;
+    transition: all 1s;
+    -webkit-transition: all 1s; 
+}
+.btn:hover{
+    filter: brightness(110%);
+    box-shadow: rgba(50, 50, 93, 0.6) 0px 8px 8px -2px, 
+    rgba(0, 0, 0, 0.4) 0px 3px 5px -6px;
+    transition: all 1s;
+    -webkit-transition: all 1s; 
 }
 .nav__menu__btn{
     display: inline-block;
+    height: 50px;
     width: 219px;
     padding-top: 15px;
     margin-top: 13px;
     margin-left: 6px;
-    transition: all .5s;
-    -webkit-transition: all .5s; 
     margin-bottom: 56px;
+    border-radius: 50px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
     letter-spacing: .5px;
     color: white;
-}
-.btn:hover{
-    background: linear-gradient(#fd90de, #9b65dd);
-    box-shadow: rgba(50, 50, 93, 0.5) 0px 8px 8px -2px, 
-    rgba(0, 0, 0, 0.4) 0px 3px 5px -6px;
-    transition: all .5s;
-    -webkit-transition: all .5s; 
 }
 
 /**********************************************************************************************/
@@ -229,13 +229,13 @@
     -webkit-background-clip:text;
     background-position-y: 20px;
     color: transparent;
-    transition: background-position-y 3s;
 }
 
 /********************** heart fx **********************/
-.fa-heart--hover:hover{
+.fa-heart:hover{
+    transition: -webkit-text-stroke, background-position-y 1.5s;
+    -webkit-text-stroke: 0;
     background-position-y: 0px;
-    transition: background-position-y 1.5s;
 }
 .restaurant__choice__name {
     margin-top: 14px;

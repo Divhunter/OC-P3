@@ -148,12 +148,15 @@ fieldset{
     cursor: pointer;
 }
 .form__field__btnBox__button{
+    text-decoration: none;
     margin-top: 0;
     margin-bottom: 71px;
     margin-left: -21px;
+    height: 50px;
     width: 185px;
+    border-radius: 50px;
     border: none;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px;
     letter-spacing: .5px;
     color: white;

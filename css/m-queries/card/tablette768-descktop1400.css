@@ -22,21 +22,27 @@
     /**********************************************************************************************/
     .form__meal__heading{
         font-size: 30px;
+        margin-bottom: -65px;
     }
     .fa-heart{
         font-size: 25px;
+        top: 80px;
     }
     .fa-heart--mealPosition{
-        margin-top: -67px;
         margin-right: 11%;
     }
+    .entree{
+        margin-top: 125px;
+    }
     .form__field__subheading{
+        margin-bottom: 2px;
         font-size: 20px;
         border-bottom: solid 4px  #99E2D0;
         width: 50px;
     }
     .form__field__list{ 
        margin-top: 20px;
+       margin-bottom: 30px;
        padding-right: 3.5%;
     }
     .form__field__list li{
@@ -74,7 +80,7 @@
     }
     .form__field__btnBox__button{
         height: 60px;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 120px;
         width: 205px;
         font-weight: bold;
