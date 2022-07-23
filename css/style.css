@@ -1,4 +1,51 @@
 /**********************************************************************************************/
+/******************************************* spinner ******************************************/
+/**********************************************************************************************/
+.fram--apparition{
+    animation-duration: 10s;
+    animation-name: apparition;
+}
+@keyframes apparition{
+	0%{
+        opacity: 0; 
+    }
+    95%{
+        opacity: 0; 
+    }
+    100%{ 
+        opacity: 1; 
+    }
+}
+.spinner{
+    display: inline-block;
+    position: absolute; 
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16vw;
+    font-family: 'Shrikhand', cursive;
+    color: transparent;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip:text;
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    background-position-y: top 16vw;
+    animation-name: filling;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+@keyframes filling{
+	0%{
+        background-position-y: top 20vw; 
+    }
+    100%{ 
+        background-position-y: top 0; 
+    }
+}
+
+/**********************************************************************************************/
 /******************************************** header ******************************************/
 /**********************************************************************************************/
 .nav__logo{
